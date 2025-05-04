@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novo portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skills-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            }
+
+            .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            }
+
+            .skill-item:hover {
+            transform: scale(1.1);
+            }
+
+            .skill-item img {
+            width: 80px;
+            height: 80px;
+            }
+
+            .skill-info {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 400px;
+            animation: fadeIn 0.5s ease-out;
+            }
+
+            .hidden {
+            display: none;
+            }
+
+            @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+            }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Adriano <span>Santos</spanspan></div>
+            <div class="buttons">
+                <nav>
+                    <a href="index.htm" class="btn serve">Inicio</a>
+                </nav>
+            </div>
+    </header>
+    <main class="hero"><!-- função hero serve para -->
+        <div class="text-content">
+            <h3>Habilidades Técnicas</h3>
+            <hr>
+            <section class="skills">
+                <h2>Minhas Habilidades</h2>
+            </section>
+            
+            <section class="skills-gallery">
+
+                <!--Ìcine engenharia de software-->
+                <div class="skill-item" data-skill="engenharia">
+                    <img src="engenharia de software.jpg" />
+                    <span>Engenharia de Software</span>
+                </div>
+
+                <div id="engenharia-info" class="skill-info hidden">
+                    <h3>Engenharia de Software</h3>
+                    <p>Iniciei o curso em fevereiro de 2025 com previsão de conclusão em junho de 2029. Paralelo a isso estou sempre buscando capacitação por fora com cursos extra visando meu aprimoramento profissional. Estou em busca de estágio para melhorar ainda mais meus conhecimentos técnicos e ser um bom profissional. </p>
+                </div>
+                
+                    <!--Ìcone Python com clique-->
+                <div class="skill-item" data-skill="python">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+
+                    <span>Python</span>
+                </div>
+
+                <!--Informações de PYTHON ao clicar-->
+                <div id="python-info" class="skill-info hidden">
+                    <h3>Python</h3>
+                    <p>Comecei com Python por sua simplicidade e clareza, explorando desde scripts simples até automações e análise de dados. Aprendi sobre estruturas de dados, orientação a objetos e bibliotecas como Pandas e Flask. É uma linguagem que uso para resolver problemas rápidos e criar soluções versáteis.</p>
+                </div>
+
+                <!--ìcone JavaScript ao clicar-->
+
+                <div class="skill-item" data-skill="javascript">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <span>JavaScript</span>
+                </div>
+
+                <div id="javascript-info" class="skill-info hidden">
+                    <h3>Java Script</h3>
+                    <p>JavaScript foi meu ponto de virada para tornar páginas interativas e dinâmicas. Desde os primeiros scripts até o uso de funções assíncronas, manipulação de DOM e APIs, fui me aprofundando na linguagem. Hoje, é a base do meu desenvolvimento front-end e me permite criar soluções flexíveis e eficientes.</p>
+                </div>
+
+                <!-- Ícone HTML com clique -->
+                <div class="skill-item" data-skill="html">
+                  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          
+                    <span>HTML</span>
+                </div>
+              
+                <!-- Informações HTML ao clicar -->
+                <div id="html-info" class="skill-info hidden">
+                  <h3>HTML</h3>
+                  <p>Comecei com HTML em [ano], aprendendo estrutura semântica e boas práticas. Hoje uso como base sólida para interfaces organizadas e acessíveis.</p>
+                </div>
+
+                <!-- Ícone CSS com clique -->
+                <div class="skill-item" data-skill="css">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          
+          
+                    <span>CSS</span>
+                </div>
+                
+                  <!-- Informações CSS ao clicar -->
+                <div id="css-info" class="skill-info hidden">
+                    <h3>CSS</h3>
+                    <p>Minha jornada com CSS começou complementando o HTML. Dominei Flexbox, Grid, animações, responsividade e crio layouts modernos com foco em usabilidade.</p>
+                </div>
+
+                    <!--Ìcone angular com clique-->
+                <div class="skill-item" data-skill="angular">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
+
+                    <span>Angular</span>
+          
+                </div>
+
+                <!--Informações Angular ao clicar-->
+                <div id="angular-info" class="skill-info hidden">
+                    <h3>Angular</h3>
+                    <p>Conheci o Angular quando busquei criar aplicações web escaláveis com arquitetura bem definida. Aprendi a construir interfaces dinâmicas, usar rotas, serviços e componentes reutilizáveis. Hoje, utilizo o Angular para desenvolver projetos robustos com alta performance e organização de código.</p>
+                </div>
+
+                <!--Ìcone MySQL ao clicar-->
+                <div class="skill-item" data-skill="mysql">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <span>MySQL</span>
+          
+                </div>
+
+                <!--Informações MySQL ao clicar-->
+                <div id="mysql-info" class="skill-info hidden">
+                    <h3>MySQL</h3>
+                    <p>MySQL foi meu primeiro contato com banco de dados relacional. Aprendi a modelar tabelas, escrever queries eficientes, usar JOINs, constraints e normalização. Hoje, utilizo o MySQL para criar sistemas bem estruturados, garantindo integridade dos dados e performance.</p>
+                </div>
+
+                <!--Ìcone GitHub ao clicar-->
+                <div class="skill-item" data-skill="github">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                    <span>GitHub</span>
+          
+                </div>
+                <!--Informações GitHub ao clicar-->
+                <div id="github-info" class="skill-info hidden">
+                    <h3>GitHub</h3>
+                    <p>GitHub é minha central de versionamento e colaboração. Aprendi a usar commits, branches e pull requests para organizar meus projetos e manter um histórico limpo. Hoje, publico meus repositórios, colaboro com outros desenvolvedores e utilizo GitHub Pages para deploy de portfólios e demos.</p>
+                </div>
+
+                <!--Ìcone nodejs ao clicar-->
+                <div class="skill-item" data-skill="nodejs">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                    <span>NodeJS</span>
+          
+                </div>
+
+                <!--INformações Nodejs ao clicar-->
+                <div id="nodejs-info" class="skill-info hidden">
+                    <h3>NOdeJS</h3>
+                    <p>Com o Node.js expandi meu conhecimento para o lado servidor. Aprendi a criar APIs, trabalhar com Express, lidar com banco de dados e construir back-ends completos. Essa tecnologia me possibilita entregar soluções completas e integradas, tudo com JavaScript.</p>
+                </div>
+            
+            </section>
+        </div>
+    </main>
+    <script>
+       const skillItems = document.querySelectorAll('.skill-item');
+
+        skillItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const skill = item.dataset.skill;
+                document.querySelectorAll('.skill-info').forEach(info => {
+                    info.classList.add('hidden'); // Esconde todos
+                });
+                document.getElementById(`${skill}-info`).classList.remove('hidden'); // Mostra o clicado
+            });
+        });
+
+    </script>
+      
+</body>
+</html>
