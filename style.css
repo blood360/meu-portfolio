@@ -23,7 +23,7 @@ header {
     animation-delay: 0.2s;
 }
 
-.logo {
+.logo {             /*Estilo da logo*/
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -41,14 +41,14 @@ header {
     color: #2980b9;
 }
 
-nav a {
+nav a {      /* Estilo do link "Início" */
     margin-left: 1.5rem;
     text-decoration: none;
     color: #3498db;
     font-weight: bold;
 }
 
-.hero {
+.hero {          /* Seção principal da página */
     display: flex;
     align-items: center;
     justify-content: space-between;
